@@ -1,0 +1,18 @@
+<div *ngIf="workHistory">
+    <div className="workhistory">
+        <h2>{{workHistory}}</h2>
+        <ul className="workhistorylist">
+            <li *ngFor="let work of workHistory">
+                <h4>{{work.title}}</h4>
+                <b>{{work.company}}</b>
+                <p>{{work.location}}</p>
+                <p>{{work.overview}}</p>
+                <ul className="workDescription">
+                    <li *ngFor="let workDescription of work.description">
+                        <p>{{workDescription}}</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>    
+</div>
