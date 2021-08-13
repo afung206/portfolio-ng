@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
+  gitHubProjectUrl: string = "https://github.com/afung206";
+
   constructor() { }
 
   ngOnInit(): void {
