@@ -14,7 +14,7 @@ export class WorkhistoryComponent implements OnInit {
       id: 1,
       title: "SOFTWARE ENGINEER II",
       company: "The Boeing Company",
-      location: "Belleve, WA",
+      location: "Bellevue, WA",
       date: "August 2018 - Present",
       overview: "The Boeing Company is a leader in aerospace and engineering. " +
       "In the Digital Transformation Environment Team, we focused on changing the " +
