@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -7,6 +8,8 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { WorkhistoryComponent } from './workhistory/workhistory.component';
 import { ContactComponent } from './contact/contact.component';
+import { QouteComponent } from './qoute/qoute.component';
+import { DataService } from './data.service';
 
 @NgModule({
   declarations: [
@@ -15,12 +18,14 @@ import { ContactComponent } from './contact/contact.component';
     AboutmeComponent,
     ProjectsComponent,
     WorkhistoryComponent,
-    ContactComponent
+    ContactComponent,
+    QouteComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
